@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header className="bg-white shadow-sm fixed w-full z-10">
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 className="text-xl font-bold text-gray-800">Mon Portfolio</h1>
+        <h1 className="text-xl font-bold text-gray-800">Allatchimi-Portfolio</h1>
         <nav className="hidden md:flex space-x-8">
           <a href="#home" className="text-gray-600 hover:text-blue-600 transition">Accueil</a>
           <a href="#about" className="text-gray-600 hover:text-blue-600 transition">À propos</a>
