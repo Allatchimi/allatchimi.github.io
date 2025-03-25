@@ -34,31 +34,30 @@ const Contact = () => {
                 type="text" 
                 name="user_name" // Important pour EmailJS
                 id="name" 
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-zinc-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
                 placeholder="Votre nom"
                 required
               />
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-gray-700 mb-2">Email</label>
+              <label htmlFor="email" className="block text-black mb-2">Email</label>
               <input 
                 type="email" 
                 name="user_email" // Important pour EmailJS
                 id="email" 
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-zinc-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
                 placeholder="votre@email.com"
                 required
               />
             </div>
-
             <div>
-              <label htmlFor="message" className="block text-gray-700 mb-2">Message</label>
+              <label htmlFor="message" className="block text-black mb-2">Message</label>
               <textarea 
                 id="message" 
-                name="message" // Important pour EmailJS
+                name="message"
                 rows="5"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-zinc-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
                 placeholder="Votre message..."
                 required
               ></textarea>

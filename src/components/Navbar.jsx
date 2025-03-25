@@ -3,8 +3,8 @@ import React from 'react';
 const Navbar = () => {
   return (
     <nav className="fixed w-full bg-white shadow-md z-10 py-2"> {/* Réduction du padding vertical */}
-      <div className="flex justify-between items-center px-4 max-w-6xl mx-auto"> {/* Suppression du padding général */}
-        <h1 className="text-lg font-semibold text-gray-800">Allatchimi-Portfolio</h1> {/* Texte plus petit */}
+      <div className="flex justify-between items-center px-0.5 max-w-7xl mx-auto"> {/* Suppression du padding général */}
+      <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-gray-800">Allatchimi-Portfolio</span>{/* Texte plus petit */} 
         <div className="hidden md:flex space-x-6"> {/* Espacement réduit entre liens */}
           <a href="#home" className="text-sm text-gray-600 hover:text-blue-600">Accueil</a> {/* Texte plus petit */}
           <a href="#about" className="text-sm text-gray-600 hover:text-blue-600">À propos</a>
