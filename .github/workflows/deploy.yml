@@ -2,20 +2,15 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main" ]  # déploie uniquement quand tu pushes sur la branche main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write  # Nécessaire pour pousser sur gh-pages
-    
+
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}  # Utilise le token automatique
-          fetch-depth: 0  # Important pour gh-pages
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -24,13 +19,13 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci  # Plus fiable que npm install
+        run: npm ci
 
-      - name: Build and Deploy
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Passe le token à gh-pages
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          npm run build
-          npm run deploy
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
