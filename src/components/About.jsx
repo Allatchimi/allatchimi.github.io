@@ -11,7 +11,7 @@ const About = () => {
           <div className="md:w-1/3 flex justify-center">
             <div className="w-64 h-64 rounded-full bg-gray-100 overflow-hidden border-4 border-blue-100 shadow-lg transition-all hover:shadow-xl hover:border-blue-200">
               <img
-                src="/assets/amine1.jpg" 
+                src="/assets/amine1-XnvNA9zF.jpg" 
                 alt="Mahamat Allatchi Bougar"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 
