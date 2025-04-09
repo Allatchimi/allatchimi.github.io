@@ -10,10 +10,11 @@ const About = () => {
           {/* Section Photo */}
           <div className="md:w-1/3 flex justify-center">
             <div className="w-64 h-64 rounded-full bg-gray-100 overflow-hidden border-4 border-blue-100 shadow-lg transition-all hover:shadow-xl hover:border-blue-200">
-              <img 
-                src={profileImage} 
+              <img
+                src="/images/amine1.jpg" 
                 alt="Mahamat Allatchi Bougar"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                
               />
             </div>
           </div>
