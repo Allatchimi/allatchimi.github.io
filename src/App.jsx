@@ -1,4 +1,6 @@
-import React from 'react';
+import './App.css'
+import { useState } from 'react';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -9,9 +11,12 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import NotFound from './components/NotFound';
 
+
 function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <Router>
+      <Router>
       <div className="font-sans">
         <Navbar />
         
@@ -34,6 +39,7 @@ function App() {
       </div>
     </Router>
   );
+
 }
 
-export default App;
+export default App
